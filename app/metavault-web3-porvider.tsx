@@ -1,14 +1,7 @@
 "use client";
 
-import { arbitrum, bsc, polygon, polygonZkEvm } from "viem/chains";
-import {
-  Chain,
-  Connector,
-  WagmiConfig,
-  configureChains,
-  createConfig,
-} from "wagmi";
-import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+import { arbitrum, bsc, polygon } from "viem/chains";
+import { Connector, WagmiConfig, configureChains, createConfig } from "wagmi";
 
 import { InjectedConnector } from "wagmi/connectors/injected";
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
